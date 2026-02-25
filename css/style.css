@@ -1,63 +1,41 @@
-/* CSS Styles for Hotel Lubumbashi Website */
-
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-header {
-    background: #4CAF50;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-}
-
-h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-nav {
-    text-align: center;
-    margin: 10px 0;
-}
-
-nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    background-color: #f8f9fa;
 }
 
-.section {
-    background: white;
-    margin: 15px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
+.header {
+    background-color: #5A914B;
     color: white;
-    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #344677;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #5A914B;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #344677;
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2em;
+    .header {
+        font-size: 1.5em;
     }
-    .container {
-        padding: 10px;
+}
+
+@media (min-width: 769px) {
+    .header {
+        font-size: 2em;
     }
 }
