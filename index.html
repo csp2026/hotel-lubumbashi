@@ -3,47 +3,421 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Hotel Lubumbashi</title>
+    <title>Hotel Lubumbashi - Luxury Accommodation in Lubumbashi, DRC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Hotel Lubumbashi</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Your Comfort is Our Priority</h2>
-            <p>Experience luxury and comfort in the heart of Lubumbashi.</p>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Hotel Lubumbashi has been serving guests since 2020, providing top-notch services.</p>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Accommodation</li>
-                <li>Dining</li>
-                <li>Spa and Wellness</li>
-                <li>Conference Facilities</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: info@hotellubumbashi.com</p>
-            <p>Phone: +243 000 000 000</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Hotel Lubumbashi. All Rights Reserved.</p>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: linear-gradient(135deg, #344677 0%, #5A914B 100%); box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home"><i class="fas fa-hotel"></i> Hotel Lubumbashi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#amenities">Amenities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" style="background-color: #F7A800; color: white; padding: 8px 20px !important; border-radius: 5px; margin-left: 10px;" href="#booking">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" style="height: 100vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1631049307038-da31bc36f4ee?w=1200&h=800&fit=crop'); background-size: cover; background-position: center; background-attachment: fixed; display: flex; align-items: center; justify-content: center; color: white; margin-top: 70px;">
+        <div class="text-center">
+            <h1 style="font-size: 4rem; font-weight: 700; margin-bottom: 20px;">Welcome to Hotel Lubumbashi</h1>
+            <p style="font-size: 2rem; color: #F7A800; margin-bottom: 15px;">Experience Luxury & Comfort</p>
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">Discover world-class accommodation in the heart of Lubumbashi</p>
+            <a href="#booking" class="btn btn-lg" style="background-color: #5A914B; color: white;">Book Your Stay</a>
+        </div>
+    </section>
+
+    <section id="rooms" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; color: #344677; font-weight: 700;">Our Premium Room Categories</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card" style="box-shadow: 0 5px 20px rgba(0,0,0,0.1); border: none;">
+                        <img src="https://images.unsplash.com/photo-1631049307038-da31bc36f4ee?w=400&h=300&fit=crop" class="card-img-top" alt="Superior Room">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Superior Room</h5>
+                            <p class="card-text">Comfortable accommodations perfect for business travelers and leisure guests</p>
+                            <ul style="font-size: 0.9rem;">
+                                <li><i class="fas fa-bed" style="color: #5A914B;"></i> Queen Bed</li>
+                                <li><i class="fas fa-wifi" style="color: #5A914B;"></i> Free Wi-Fi</li>
+                                <li><i class="fas fa-tv" style="color: #5A914B;"></i> Smart TV</li>
+                                <li><i class="fas fa-shower" style="color: #5A914B;"></i> Modern Bath</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card" style="box-shadow: 0 5px 20px rgba(0,0,0,0.1); border: none;">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=300&fit=crop" class="card-img-top" alt="Executive Room">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Executive Room</h5>
+                            <p class="card-text">Spacious rooms designed for professionals with premium furnishings</p>
+                            <ul style="font-size: 0.9rem;">
+                                <li><i class="fas fa-bed" style="color: #5A914B;"></i> King Bed</li>
+                                <li><i class="fas fa-wifi" style="color: #5A914B;"></i> High-Speed Wi-Fi</li>
+                                <li><i class="fas fa-laptop" style="color: #5A914B;"></i> Work Desk</li>
+                                <li><i class="fas fa-coffee" style="color: #5A914B;"></i> Mini Bar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card" style="box-shadow: 0 5px 20px rgba(0,0,0,0.1); border: none;">
+                        <img src="https://images.unsplash.com/photo-1590073242678-70414fc7e201?w=400&h=300&fit=crop" class="card-img-top" alt="Executive Twin Bed Room">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Executive Twin Bed Room</h5>
+                            <p class="card-text">Perfect for travelers who prefer separate beds with luxury amenities</p>
+                            <ul style="font-size: 0.9rem;">
+                                <li><i class="fas fa-bed" style="color: #5A914B;"></i> Twin Beds</li>
+                                <li><i class="fas fa-wifi" style="color: #5A914B;"></i> Premium Wi-Fi</li>
+                                <li><i class="fas fa-couch" style="color: #5A914B;"></i> Seating Area</li>
+                                <li><i class="fas fa-bath" style="color: #5A914B;"></i> Bathrobe & Slippers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card" style="box-shadow: 0 5px 20px rgba(0,0,0,0.1); border: none;">
+                        <img src="https://images.unsplash.com/photo-1561368899-ce4eca5e9b63?w=400&h=300&fit=crop" class="card-img-top" alt="Executive Suite">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Executive Suite Room</h5>
+                            <p class="card-text">Luxurious two-room suites with separate living and sleeping areas</p>
+                            <ul style="font-size: 0.9rem;">
+                                <li><i class="fas fa-crown" style="color: #5A914B;"></i> Suite Living</li>
+                                <li><i class="fas fa-sofa" style="color: #5A914B;"></i> Living Room</li>
+                                <li><i class="fas fa-bath" style="color: #5A914B;"></i> Luxury Bath</li>
+                                <li><i class="fas fa-martini-glass" style="color: #5A914B;"></i> Minibar & Safe</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card" style="box-shadow: 0 5px 20px rgba(0,0,0,0.1); border: none;">
+                        <img src="https://images.unsplash.com/photo-1578922746465-c47a00ad41e3?w=400&h=300&fit=crop" class="card-img-top" alt="Business Class Suite">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Business Class Suite</h5>
+                            <p class="card-text">Premium suite with dedicated workspace, perfect for executives</p>
+                            <ul style="font-size: 0.9rem;">
+                                <li><i class="fas fa-briefcase" style="color: #5A914B;"></i> Business Center</li>
+                                <li><i class="fas fa-monitor" style="color: #5A914B;"></i> Dual Desks</li>
+                                <li><i class="fas fa-phone" style="color: #5A914B;"></i> Conference Call Setup</li>
+                                <li><i class="fas fa-concierge-bell" style="color: #5A914B;"></i> Concierge Service</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card" style="box-shadow: 0 5px 20px rgba(0,0,0,0.1); border: none;">
+                        <img src="https://images.unsplash.com/photo-1631049307038-da31bc36f4ee?w=400&h=300&fit=crop" class="card-img-top" alt="Deluxe Room">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Deluxe Room</h5>
+                            <p class="card-text">Our most premium accommodation with exclusive amenities and views</p>
+                            <ul style="font-size: 0.9rem;">
+                                <li><i class="fas fa-crown" style="color: #5A914B;"></i> Premium Quality</li>
+                                <li><i class="fas fa-city" style="color: #5A914B;"></i> City Views</li>
+                                <li><i class="fas fa-spa" style="color: #5A914B;"></i> Luxury Toiletries</li>
+                                <li><i class="fas fa-glass-cheers" style="color: #5A914B;"></i> Welcome Amenities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="amenities" class="py-5" style="background: linear-gradient(135deg, #f5f7fa 0%, #F8F9FA 100%);">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; color: #344677; font-weight: 700;">World-Class Amenities</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: none; border-top: 4px solid #5A914B;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-wifi" style="font-size: 3rem; color: #5A914B; margin-bottom: 15px;"></i>
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">High-Speed Wi-Fi</h5>
+                            <p class="card-text">Complimentary high-speed internet throughout the hotel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: none; border-top: 4px solid #5A914B;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-utensils" style="font-size: 3rem; color: #5A914B; margin-bottom: 15px;"></i>
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Fine Dining</h5>
+                            <p class="card-text">Exquisite cuisine prepared by expert chefs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: none; border-top: 4px solid #5A914B;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-dumbbell" style="font-size: 3rem; color: #5A914B; margin-bottom: 15px;"></i>
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Fitness Center</h5>
+                            <p class="card-text">Fully equipped gym with modern equipment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: none; border-top: 4px solid #5A914B;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-swimming-pool" style="font-size: 3rem; color: #5A914B; margin-bottom: 15px;"></i>
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Swimming Pool</h5>
+                            <p class="card-text">Refreshing outdoor pool with lounging area</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: none; border-top: 4px solid #5A914B;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-spa" style="font-size: 3rem; color: #5A914B; margin-bottom: 15px;"></i>
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Spa & Wellness</h5>
+                            <p class="card-text">Rejuvenate with our premium spa services</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: none; border-top: 4px solid #5A914B;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-concierge-bell" style="font-size: 3rem; color: #5A914B; margin-bottom: 15px;"></i>
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">24/7 Concierge</h5>
+                            <p class="card-text">Expert assistance available round the clock</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: none; border-top: 4px solid #5A914B;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-car" style="font-size: 3rem; color: #5A914B; margin-bottom: 15px;"></i>
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Airport Transfers</h5>
+                            <p class="card-text">Convenient transportation services available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: none; border-top: 4px solid #5A914B;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-briefcase" style="font-size: 3rem; color: #5A914B; margin-bottom: 15px;"></i>
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Business Center</h5>
+                            <p class="card-text">Fully equipped for corporate meetings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card" style="box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: none; border-top: 4px solid #5A914B;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-video" style="font-size: 3rem; color: #5A914B; margin-bottom: 15px;"></i>
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Conference Facilities</h5>
+                            <p class="card-text">Modern rooms for meetings and conferences</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; color: #344677; font-weight: 700;">Hotel Gallery</h2>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-4">
+                    <div style="position: relative; height: 280px; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <img src="https://images.unsplash.com/photo-1631049307038-da31bc36f4ee?w=400&h=300&fit=crop" alt="Gallery 1" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div style="position: relative; height: 280px; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=300&fit=crop" alt="Gallery 2" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div style="position: relative; height: 280px; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <img src="https://images.unsplash.com/photo-1590073242678-70414fc7e201?w=400&h=300&fit=crop" alt="Gallery 3" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div style="position: relative; height: 280px; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <img src="https://images.unsplash.com/photo-1551632786-de41ec4a385e?w=400&h=300&fit=crop" alt="Gallery 4" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div style="position: relative; height: 280px; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <img src="https://images.unsplash.com/photo-1557522374-ccf37c45d486?w=400&h=300&fit=crop" alt="Gallery 5" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div style="position: relative; height: 280px; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <img src="https://images.unsplash.com/photo-1570129477492-45a003537e1b?w=400&h=300&fit=crop" alt="Gallery 6" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-5" style="background: linear-gradient(135deg, #344677 0%, #5A914B 100%); color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 700;">Book Your Stay Today</h2>
+                    <div class="card" style="border: none; background: white; color: #333;">
+                        <div class="card-body" style="padding: 40px;">
+                            <form id="bookingForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="checkIn" class="form-label" style="color: #344677; font-weight: 600;">Check-in Date</label>
+                                        <input type="date" class="form-control" id="checkIn" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="checkOut" class="form-label" style="color: #344677; font-weight: 600;">Check-out Date</label>
+                                        <input type="date" class="form-control" id="checkOut" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="guests" class="form-label" style="color: #344677; font-weight: 600;">Number of Guests</label>
+                                        <input type="number" class="form-control" id="guests" min="1" value="1" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="roomType" class="form-label" style="color: #344677; font-weight: 600;">Room Type</label>
+                                        <select class="form-select" id="roomType" required>
+                                            <option selected disabled>Select Room Type</option>
+                                            <option value="Superior Room">Superior Room</option>
+                                            <option value="Executive Room">Executive Room</option>
+                                            <option value="Executive Twin Bed Room">Executive Twin Bed Room</option>
+                                            <option value="Executive Suite Room">Executive Suite Room</option>
+                                            <option value="Business Class Suite Room">Business Class Suite Room</option>
+                                            <option value="Deluxe Room">Deluxe Room</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label" style="color: #344677; font-weight: 600;">Full Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label" style="color: #344677; font-weight: 600;">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="phone" class="form-label" style="color: #344677; font-weight: 600;">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label" style="color: #344677; font-weight: 600;">Special Requests</label>
+                                        <textarea class="form-control" id="message" rows="3" placeholder="Any special requests or requirements..."></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-lg w-100" style="background-color: #5A914B; color: white; font-weight: 600;">Complete Booking</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5" style="background-color: #F8F9FA;">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; color: #344677; font-weight: 700;">Get in Touch</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card" style="box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: none; text-align: center;">
+                        <div class="card-body">
+                            <i class="fas fa-map-marker-alt" style="font-size: 2.5rem; color: #5A914B; margin-bottom: 15px;"></i>
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Location</h5>
+                            <p class="card-text">Avenue Du 30 Juin<br>Lubumbashi<br>Democratic Republic Of Congo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card" style="box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: none; text-align: center;">
+                        <div class="card-body">
+                            <i class="fas fa-phone" style="font-size: 2.5rem; color: #5A914B; margin-bottom: 15px;"></i>
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Phone</h5>
+                            <p class="card-text"><a href="tel:+243" style="color: #5A914B; text-decoration: none;">+243 (0) XXX XXX XXX</a></p>
+                            <p class="card-text" style="font-size: 0.9rem;">24/7 Reservations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card" style="box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: none; text-align: center;">
+                        <div class="card-body">
+                            <i class="fas fa-envelope" style="font-size: 2.5rem; color: #5A914B; margin-bottom: 15px;"></i>
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Email</h5>
+                            <p class="card-text"><a href="mailto:info@hotellubumbashi.com" style="color: #5A914B; text-decoration: none;">info@hotellubumbashi.com</a></p>
+                            <p class="card-text" style="font-size: 0.9rem;"><a href="mailto:reservations@hotellubumbashi.com" style="color: #5A914B; text-decoration: none;">reservations@hotellubumbashi.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card" style="box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: none; text-align: center;">
+                        <div class="card-body">
+                            <i class="fas fa-clock" style="font-size: 2.5rem; color: #5A914B; margin-bottom: 15px;"></i>
+                            <h5 class="card-title" style="color: #344677; font-weight: 700;">Hours</h5>
+                            <p class="card-text">24/7 Front Desk<br>Restaurant: 6AM - 11PM<br>Room Service Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: #344677; color: white; padding: 40px 0;">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 col-lg-3">
+                    <h6 style="color: #F7A800; font-weight: 700; margin-bottom: 20px;">About Hotel Lubumbashi</h6>
+                    <p>Your premier destination for luxury accommodation and exceptional service in Lubumbashi.</p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h6 style="color: #F7A800; font-weight: 700; margin-bottom: 20px;">Quick Links</h6>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#home" style="color: rgba(255,255,255,0.8); text-decoration: none;">Home</a></li>
+                        <li><a href="#rooms" style="color: rgba(255,255,255,0.8); text-decoration: none;">Rooms</a></li>
+                        <li><a href="#amenities" style="color: rgba(255,255,255,0.8); text-decoration: none;">Amenities</a></li>
+                        <li><a href="#gallery" style="color: rgba(255,255,255,0.8); text-decoration: none;">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h6 style="color: #F7A800; font-weight: 700; margin-bottom: 20px;">Policies</h6>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none;">Privacy Policy</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none;">Terms & Conditions</a></li>
+                        <li><a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none;">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h6 style="color: #F7A800; font-weight: 700; margin-bottom: 20px;">Follow Us</h6>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#" style="width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="width: 40px; height: 40px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none;"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.2);">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2026 Hotel Lubumbashi. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #ff6b6b;"></i> for your comfort</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
